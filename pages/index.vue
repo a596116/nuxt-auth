@@ -116,11 +116,13 @@ import LineLoginButton from '../components/LineLoginButton.vue'
 
 useSeoMeta({
   title: '第三方登入示範',
-  description: '第三方登入示範',
+  description:
+    '基於 Nuxt 3 和 Auth.js 的第三方登入示範，集成了 Google、GitHub、Facebook、Line 和 Apple 登入功能，提供完整的用戶認證流程實現範例。',
   ogTitle: '第三方登入示範',
-  ogDescription: '第三方登入示範',
+  ogDescription:
+    '使用 Nuxt 3 實現的多平台第三方登入示範，包含 Google、GitHub、Facebook、Line 和 Apple 登入整合，適合快速開發需要用戶認證的應用。',
   ogImage: '/author.png',
-  ogUrl: 'https://nuxt-auth.vercel.app/',
+  ogUrl: 'https://nuxt3-auth-demo.vercel.app/',
   ogType: 'website',
 })
 
