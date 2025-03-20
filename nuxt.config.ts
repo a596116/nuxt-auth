@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
   modules: ['@nuxt/image', '@sidebase/nuxt-auth'],
-  ssr: false,
 
   runtimeConfig: {
     auth: {
@@ -40,7 +39,7 @@ export default defineNuxtConfig({
 
   auth: {
     isEnabled: true,
-    baseURL: process.env.AUTH_ORIGIN,
+    baseURL: process.env.AUTH_ORIGIN ? process.env.AUTH_ORIGIN : undefined,
     provider: {
       type: 'authjs',
       trustHost: true,
