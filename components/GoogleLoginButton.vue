@@ -50,6 +50,7 @@ const handleLogin = () => {
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .login-button {
@@ -58,9 +59,18 @@ const handleLogin = () => {
   border: 1px solid #dadce0;
 }
 
+.google-button {
+  background-color: white;
+  color: #3c4043;
+  border: 2px solid #eaeaea;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
 .google-button:hover {
-  background-color: #f5f5f5;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-color: #d2d2d2;
 }
 
 .google-icon {
