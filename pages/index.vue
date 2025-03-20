@@ -48,6 +48,9 @@
           <AppleLoginButton />
           <button class="help-button" @click="showHelpModal('apple')">?</button>
         </div>
+        <div class="settings-section">
+          <CredentialsManager />
+        </div>
       </div>
       <div v-else class="profile-container">
         <div class="user-info">
@@ -87,6 +90,7 @@
             登出
           </button>
         </div>
+        <CredentialsManager />
       </div>
 
       <!-- 添加説明模態視窗 -->
@@ -113,6 +117,7 @@ import GitHubLoginButton from '../components/GitHubLoginButton.vue'
 import AppleLoginButton from '../components/AppleLoginButton.vue'
 import FacebookLoginButton from '../components/FacebookLoginButton.vue'
 import LineLoginButton from '../components/LineLoginButton.vue'
+import CredentialsManager from '../components/CredentialsManager.vue'
 
 useSeoMeta({
   title: '第三方登入示範',
@@ -795,5 +800,12 @@ function getProviderHelpContent(provider) {
     width: 95%;
     max-height: 90vh;
   }
+}
+
+.settings-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  width: 100%;
 }
 </style>
